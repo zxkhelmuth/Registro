@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Targeta de Registro</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="tema" id="tema">
+        <button id="dark" onclick="darkTema()">Dark</button>
+        <button id="white" onclick="whiteTema()">White</button>
+    </div>
+    <form>
+        <h1 class="h1">Registro</h1>
+
+        <label>
+            <span class="text">Nombre:</span>
+            <br>
+            <input type="text" class="campoNombre" id="campoNombre" required>
+            <input type="submit" id="enviar">
+        </label>
+        <label>
+            <span class="text">Apellido:</span>
+            <br>
+            <input type="text" class="campoNombre" id="campoApellido" required>
+            <input type="submit" id="enviar">
+        </label>
+        <label>
+            <span class="text">Nombre de Usuario:</span>
+            <br>
+            <input type="text" class="campoNombre" id="campoUser" required>
+            <input type="submit" id="enviar">
+        </label>
+        <label>
+            <span class="text">Correo Electronico:</span>
+            <br>
+            <input type="email" class="campoNombre" id="campoEmail" required>
+            <input type="email" id="enviar">
+        </label>
+        <label>
+            <span class="text">Contraseña:</span>
+            <br>
+            <input type="password" class="campoNombre" id="campoContraseña" required>
+            <input type="submit" id="enviar">
+        </label>
+
+        <label>
+            <input type="checkbox" id="check" required> 
+            <input type="submit" id="enviar">
+            <span class="text">Acepto los terminos, condiciones y politicas.</span>
+        </label>
+
+        <button type="button" onclick="mostrarNombre() " id="btn">Iniciar Sesion</button>
+    </form>
+    <script src="./script.js"></script>
+</body>
+</html>
